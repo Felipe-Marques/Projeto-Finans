@@ -5,7 +5,7 @@ $(document).ready(function() {
         let position = $(this).scrollTop();
         console.log(position);
 
-        if (position >= 550) {
+        if (position >= 580) {
             $('#voltar-topo').addClass('scrollTop');
         } else {
             $('#voltar-topo').removeClass('scrollTop');
