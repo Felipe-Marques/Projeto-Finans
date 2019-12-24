@@ -87,16 +87,16 @@
             <div class="row">
 
                 <!-- INICIO CONTEÚDO SECTION-->
-                <div class="col-md-6 d-flex">
-                    <div class="align-self-center text-white">
+                <div class="col-12 col-md-6 d-flex">
+                    <div class="align-self-center text-white w-100">
                         <h1 class="display-4"> Suas contas, descomplicadas</h2>
                             <p>
                                 Usado por mais 1 milhão de pessoas, o Finans é uma ferramenta online que vai facilitar sua vida financeira.
                             </p>
                             <form class="my-4">
                                 <!-- input group append -->
-                                <div class="input-group input-group-lg">
-                                    <input class="form-control" type="text" placeholder="Seu e-mail">
+                                <div class="input-group  w-100">
+                                    <input class="form-control" type="text" placeholder="nome@exemplo.com">
                                     <div class="input-group-append">
                                         <button type="button" class="btn btn-primary">Cadastre-se</button>
                                     </div>
@@ -119,9 +119,10 @@
                 <!-- FIM CONTEÚDO SECTION-->
 
                 <!-- INICIO CAPA SECTION-->
-                <div class="col-md-6 d-none d-md-block">
+                <div class="col-md-6 text-center d-none d-sm-block">
                     <!--d-md-block bloqueia o d-none em determinado breakpoint.-->
-                    <img src="img/capa-mulher.png">
+                    <img src="img/capa-mulher.png" class="w-100">
+
                 </div>
                 <!-- FIM CAPA SECTION-->
 
@@ -304,7 +305,7 @@
         <!--FIM CONTAINER-->
 
         <!-- #INICIO BOTÃO VOLTAR TOPO -->
-        <a id="voltar-topo" href="#Topo" class="py-1 scrollTop" title="Voltar para o topo.">
+        <a id="voltar-topo" href="#Topo" class="py-1" title="Voltar para o topo.">
             <i class="fas fa-arrow-circle-up fa-3x"></i>
         </a>
         <!-- #FIM BOTÃO VOLTAR TOPO -->
@@ -336,12 +337,12 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                            <input type="email" class="form-control" name="E-mail" placeholder="Digite seu e-mail..." required="required">
+                            <input type="text" autocomplete="username" class="form-control" name="E-mail" placeholder="nome@examplo.com" required="required">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" name="Senha" placeholder="Digite sua senha..." required="required">
+                            <input type="password" autocomplete="current-password" class="form-control" name="Senha" placeholder="senha" required="required">
                         </div>
-                        <div class="btn btn-block btn-lg login-btn bg-primary btn-outline-light">Entrar</div>
+                        <input class="btn btn-block btn-lg login-btn bg-primary btn-outline-light" type="submit" value="Logar">
                     </form>
                 </div>
                 <!-- #MODAL BODY-->

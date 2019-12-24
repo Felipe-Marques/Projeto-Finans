@@ -1,6 +1,18 @@
+body {
+    width: 100%;
+}
+
+#home img {
+    width: auto;
+}
+
 .caixa {
     padding: 60px 0;
     border-bottom: 1px solid #e5e5e5;
+}
+
+.footer-menu {
+    padding: 0;
 }
 
 .footer-menu p a {
@@ -11,6 +23,9 @@
 /*Small devices (landscape phones, 576px e maiores)*/
 
 @media (max-width: 767.98px) {
+    #home h1 {
+        font-size: 2.5rem;
+    }
     .footer-menu {
         justify-content: center;
     }
@@ -106,11 +121,11 @@
 /* ************** #INICIO MODAL **************** */
 
 
-/* Botão para voltar ao Topo */
+/* #INICIO - Botão para voltar ao Topo */
 
 #voltar-topo {
     color: #ffc107;
-    display: inline-block;
+    display: inline;
     -webkit-transition: .6s ease;
     transition: .6s ease;
 }
@@ -136,3 +151,6 @@
         transform: translateY(10%);
     }
 }
+
+
+/* #FIM - Botão para voltar ao Topo */

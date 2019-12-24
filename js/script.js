@@ -5,7 +5,8 @@ $(document).ready(function() {
         let position = $(this).scrollTop();
         console.log(position);
 
-        if (position >= 580) {
+        if (position >= 580) //Position em pixels para o botão aparecer na tela.
+        {
             $('#voltar-topo').addClass('scrollTop');
         } else {
             $('#voltar-topo').removeClass('scrollTop');
