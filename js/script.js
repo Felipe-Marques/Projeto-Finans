@@ -25,4 +25,20 @@ $(document).ready(function() {
 
     });
 
+    //function captura email da landing page e disponibiliza na pagina de cadastro.
+    $('#campo-email-home').blur(function() {
+
+        //Atribuindo na var email o email digitado no home.
+        var email = document.getElementById('campo-email-home').value
+
+        //limpando campo de email no home com o valor anterior na var.
+        document.getElementById('campo-email-home').value = ""
+
+        //Campo email no modal de cadastro recebedo o email da var email.
+        document.getElementById('campo_email').value = email
+
+        //Zerando a variavel email (buscando forma melhor para realizar esta tarefa.)
+        var email = ''
+    });
+
 })

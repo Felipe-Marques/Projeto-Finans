@@ -55,15 +55,15 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="recursos.html">Recursos</a>
+                            <a class="nav-link" href="#">Recursos</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="beneficios.html">Benefícios</a>
+                            <a class="nav-link" href="#">Benefícios</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link mr-4" href="planos.html">Planos</a>
+                            <a class="nav-link mr-4" href="#">Planos</a>
                         </li>
 
                         <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#modal-login">Entrar</button>
@@ -96,9 +96,9 @@
                             <form class="my-4">
                                 <!-- input group append -->
                                 <div class="input-group w-100">
-                                    <input class="form-control" type="text" placeholder="nome@exemplo.com">
+                                    <input class="form-control" id="campo-email-home" type="text" placeholder="nome@exemplo.com">
                                     <div class="input-group-append">
-                                        <button type="button" class="btn btn-primary">Cadastre-se</button>
+                                        <button type="button" id="btn-cadastro" class="btn btn-primary" data-toggle="modal" data-target="#modal-cadastro">Cadastre-se</button>
                                     </div>
                                 </div>
                             </form>
@@ -272,9 +272,9 @@
                 <div class="col-md-8 footer-menu d-flex">
                     <p>
                         <a href="#">Home</a>
-                        <a href="recursos.html">Recursos</a>
-                        <a href="beneficios.html">Benefícios</a>
-                        <a href="planos.html">Planos</a>
+                        <a href="#">Recursos</a>
+                        <a href="#">Benefícios</a>
+                        <a href="#">Planos</a>
                     </p>
                 </div>
                 <!--FIM LINKS-->
@@ -326,7 +326,9 @@
                     <div class="avatar">
                         <img src="img/favicon.png" alt="logo do site tela login">
                     </div>
-                    <h4 class="modal-title">Faça seu login!</h4>
+                    <div class="w-100 text-center">
+                        <h4 class="modal-title">Faça seu login!</h4>
+                    </div>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -363,6 +365,72 @@
     <!--#INICIO MODAL PARA LOGIN-->
 
     <!-- #INICIO MODAL DE MENSAGEM DE CADASTRO-->
+    <div id="modal-cadastro" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="exampleModalLabel">
+
+        <!--#INICIO MODAL-CADASTRO-->
+        <div class="modal-dialog modal-cadastro" role="document">
+
+            <!--# INICIO - MODAL-CONTENT-CADASTRO-->
+            <div class="modal-content">
+
+                <!-- #MODAL HEADER CADASTRO-->
+                <div class="modal-header">
+                    <div class="avatar">
+                        <img src="img/favicon.png" alt="logo do site tela login">
+                    </div>
+                    <div class="w-100 text-center">
+                        <h4 class="modal-title">Abra sua conta agora!</h4>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- #MODAL HEADER-->
+
+                <!-- #MODAL BODY CADASTRO-->
+                <div class="modal-body">
+
+                    <!-- INICIO - FORM-CADASTRO-->
+                    <form>
+                        <div class="row form-group">
+                            <label for="campo_nome">Nome*</label>
+                            <input type="text" id="campo_nome" name="Nome" class="form-control" required="required">
+                        </div>
+                        <div class="row form-group">
+                            <label for="campo_ceular">Celular*</label>
+                            <input type="text" id="campo_celular" name="Celular" class="form-control" required="required">
+                        </div>
+                        <div class="row form-group">
+                            <label for="campo_email">E-mail*</label>
+                            <input type="text" id="campo_email" class="form-control" name="E-mail" required="required">
+                        </div>
+                        <div class="row form-group">
+                            <label for="campo_senha">Senha*</label>
+                            <input type="password" class="form-control" name="Senha" required="required">
+                        </div>
+
+                        <div class="row">
+                            <input class="btn btn-block btn-lg login-btn bg-primary btn-outline-light" type="submit" value="Abra sua conta">
+                        </div>
+                    </form>
+                    <!-- FIM - FORM-CADASTRO-->
+
+                </div>
+                <!-- #MODAL BODY-->
+
+                <!-- #MODAL FOOTER CADASTRO-->
+                <div class="modal-footer">
+
+                </div>
+                <!-- #MODAL FOOTER-->
+
+            </div>
+            <!--#FIM - MODAL-CONTENT-->
+
+        </div>
+        <!--#FIM MODAL-LOGIN-->
+
+    </div>
 
     <!-- #INICIO MODAL DE MENSAGEM DE CADASTRO-->
 
